@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us – TravelBloom</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen text-[#f5f1e8]">
+
+<!-- Navbar (без поиска) -->
+<nav class="absolute top-0 left-0 w-full z-20
+            bg-gradient-to-b from-black/70 to-black/10">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+
+            <!-- Logo -->
+            <div class="text-xl font-semibold flex items-center gap-2">
+                ✈️ TravelBloom
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex items-center space-x-6 text-sm">
+                <a href="travel_recommendation.html" class="hover:text-teal-300 transition">Home</a>
+                <a href="about.html" class="hover:text-teal-300 transition">About Us</a>
+                <a href="contact.html" class="text-teal-300">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Background -->
+<section
+    class="relative min-h-screen bg-cover bg-center"
+    style="background-image: url('./MondoBelloTurismo-NovaIorque.webp');"
+>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Social icons (без изменений) -->
+    <div class="absolute left-6 top-1/2 -translate-y-1/2 z-10
+                flex flex-col items-center gap-6 text-lg">
+        <div class="w-px h-24 bg-white"></div>
+
+        <a href="#" class="hover:text-teal-300 transition">
+            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+                <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993z"/>
+            </svg>
+        </a>
+
+        <a href="#" class="hover:text-teal-300 transition">
+            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978h1.956v3.325h-1.4c-1.1 0-1.473.518-1.473 1.278v1.955h2.77l-.361 3.667h-2.409v7.98z"/>
+            </svg>
+        </a>
+
+        <a href="#" class="hover:text-teal-300 transition">
+            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+                <path d="M7.03.084C3.26.254.255 3.26.085 7.03.028 8.308.016 8.72.022 11.98c.006 3.26.02 3.67.082 4.95.17 3.77 3.18 6.78 6.95 6.95 1.28.06 1.69.07 4.95.06 3.26-.01 3.67-.02 4.95-.08 3.77-.17 6.78-3.18 6.95-6.95.06-1.28.07-1.69.06-4.95-.01-3.26-.02-3.67-.08-4.95C23.74 3.26 20.73.255 16.96.085 15.68.028 15.27.016 12.01.022 8.75.028 8.34.02 7.03.084z"/>
+            </svg>
+        </a>
+
+        <a href="#" class="hover:text-teal-300 transition">
+            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-24 flex">
+
+        <!-- Left text -->
+        <div class="w-1/2 pr-12">
+            <h1 class="text-6xl font-extrabold mb-6">
+                CONTACT US
+            </h1>
+
+            <p class="text-sm text-[#f0eadc]">
+                Get in touch
+            </p>
+        </div>
+
+        <!-- Form -->
+        <div class="w-1/2 bg-black/30 backdrop-blur p-8 rounded-lg">
+
+            <form action="#" method="post" class="space-y-6">
+
+                <div>
+                    <label class="block text-sm mb-1">Name</label>
+                    <input
+                        type="text"
+                        required
+                        placeholder="Your name"
+                        class="w-full px-4 py-2 bg-transparent border border-white/40
+                               text-sm rounded focus:outline-none focus:border-teal-400"
+                    />
+                </div>
+
+                <div>
+                    <label class="block text-sm mb-1">Email</label>
+                    <input
+                        type="email"
+                        required
+                        placeholder="Your email"
+                        class="w-full px-4 py-2 bg-transparent border border-white/40
+                               text-sm rounded focus:outline-none focus:border-teal-400"
+                    />
+                </div>
+
+                <div>
+                    <label class="block text-sm mb-1">Message</label>
+                    <textarea
+                        required
+                        rows="4"
+                        placeholder="Your message"
+                        class="w-full px-4 py-2 bg-transparent border border-white/40
+                               text-sm rounded resize-none focus:outline-none focus:border-teal-400"
+                    ></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full py-3 bg-teal-500 text-sm font-semibold rounded
+                           hover:bg-teal-600 transition"
+                >
+                    Submit
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
